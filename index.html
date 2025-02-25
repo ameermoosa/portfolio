@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Navbar</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  import { SpeedInsights } from "@vercel/speed-insights/next"
 </head>
 <body class="bg-gray-900">
   <!-- Navbar -->
@@ -37,7 +36,7 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu (GitHub button removed from here as it's in the navbar) -->
+  <!-- Mobile Menu )-->
   <div id="mobileMenu" class="hidden md:hidden bg-gray-800 text-white text-center py-4">
     <a href="#" class="block py-2 hover:text-purple-400">About</a>
     <a href="#" class="block py-2 hover:text-purple-400">Skills</a>
@@ -59,7 +58,7 @@
   <!-- Hero Section -->
   <section class="min-h-screen flex items-center justify-center px-6 md:px-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl items-center">
-      <!-- Profile Image: موبائل ویو میں پہلے اور ڈیسک ٹاپ میں بعد میں دکھائی دے گی -->
+      <!-- Profile Image: -->
       <div class="relative flex justify-center md:justify-end order-1 md:order-2">
         <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-purple-500 flex items-center justify-center relative">
           <img src="moosa.jpg" alt="Profile Image" class="rounded-full w-full h-full object-cover">
@@ -67,7 +66,7 @@
         </div>
       </div>
 
-      <!-- Text Content: موبائل ویو میں بعد میں اور ڈیسک ٹاپ میں پہلے دکھائی دے گا -->
+      <!-- Text Content:  -->
       <div class="text-center md:text-left order-2 md:order-1">
         <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight">
           Hi, I am <br> <span class="text-white-400">Ameer Moosa</span>
@@ -90,5 +89,92 @@
       </div>
     </div>
   </section>
+  <!----------------------skills-------------------------- -->
+  <div class="bg-gray-900 text-white text-center py-10">
+    <h2 class="text-4xl font-bold">Skills</h2>
+    <p class="text-lg text-gray-300 mt-2 max-w-xl mx-auto">
+        Here are some of my skills on which I have been working on for the past 2 years.
+    </p>
+</div>
+
+<!-- ------------------------------------------------------------------ -->
+<section class="py-10">
+  <h2 class="text-4xl font-bold text-center">Skills</h2>
+  <p class="text-lg text-gray-400 text-center mt-2">
+      Here are some of my skills on which I have been working on for the past 2 years.
+  </p>
+
+  <div class="container mx-auto px-4 mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Frontend -->
+      <div class="border-2 border-purple-500 rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-center">Frontend</h3>
+          <div class="flex flex-wrap justify-center gap-4 mt-4">
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6" alt="React">
+                  <span>React Js</span>
+              </div>
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" class="w-6" alt="Redux">
+                  <span>Redux</span>
+              </div>
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6" alt="JavaScript">
+                  <span>JavaScript</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="border-2 border-purple-500 rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-center">Backend</h3>
+          <div class="flex flex-wrap justify-center gap-4 mt-4">
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6" alt="Node.js">
+                  <span>Node Js</span>
+              </div>
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6" alt="Python">
+                  <span>Python</span>
+              </div>
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6" alt="MongoDB">
+                  <span>MongoDB</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Designing -->
+      <div class="border-2 border-purple-500 rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-center">Designing</h3>
+          <div class="flex flex-wrap justify-center gap-4 mt-4">
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-6" alt="Figma">
+                  <span>Figma</span>
+              </div>
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" class="w-6" alt="Photoshop">
+                  <span>Photoshop</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Others -->
+      <div class="border-2 border-purple-500 rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-center">Others</h3>
+          <div class="flex flex-wrap justify-center gap-4 mt-4">
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6" alt="Git">
+                  <span>Git</span>
+              </div>
+              <div class="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-md">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-6" alt="Docker">
+                  <span>Docker</span>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</section>
+
 </body>
 </html>
