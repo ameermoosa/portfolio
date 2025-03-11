@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Navbar</title>
+  <title>Ameer Moosa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -19,18 +19,19 @@
 
     <!-- Desktop Menu -->
     <ul class="hidden md:flex space-x-6 text-lg">
-      <li><a href="#" class="hover:text-purple-400 transition">About</a></li>
-      <li><a href="#" class="hover:text-purple-400 transition">Skills</a></li>
-      <li><a href="#" class="hover:text-purple-400 transition">Experience</a></li>
-      <li><a href="#" class="hover:text-purple-400 transition">Projects</a></li>
-      <li><a href="#" class="hover:text-purple-400 transition">Education</a></li>
+      <li><a href="#about" class="hover:text-purple-400 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-purple-400 transition">Skills</a></li>
+      <li><a href="#experience" class="hover:text-purple-400 transition">Experience</a></li>
+      <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
+      <li><a href="#education" class="hover:text-purple-400 transition">Education</a></li>
+      <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
     </ul>
 
     <!-- Right side container: GitHub button and mobile menu button -->
     <div class="flex items-center space-x-4">
       <!-- Github Button (now always visible) -->
-      <a href="#"
-        class="border border-purple-400 px-4 py-2 rounded-lg text-purple-400 hover:bg-purple-400 hover:text-white">
+      <a href="https://github.com/ameermoosa "
+        target="_blank" class="border border-purple-400 px-4 py-2 rounded-lg text-purple-400 hover:bg-purple-400 hover:text-white">
         Github Profile
       </a>
       <!-- Mobile Menu Button (only on mobile) -->
@@ -42,11 +43,12 @@
 
   <!-- Mobile Menu )-->
   <div id="mobileMenu" class="hidden md:hidden bg-gray-800 text-white text-center py-4">
-    <a href="#" class="block py-2 hover:text-purple-400">About</a>
-    <a href="#" class="block py-2 hover:text-purple-400">Skills</a>
-    <a href="#" class="block py-2 hover:text-purple-400">Experience</a>
-    <a href="#" class="block py-2 hover:text-purple-400">Projects</a>
-    <a href="#" class="block py-2 hover:text-purple-400">Education</a>
+    <a href="#about" class="block py-2 hover:text-purple-400">About</a>
+    <a href="#skills" class="block py-2 hover:text-purple-400">Skills</a>
+    <a href="#experience" class="block py-2 hover:text-purple-400">Experience</a>
+    <a href="#projects" class="block py-2 hover:text-purple-400">Projects</a>
+    <a href="#education" class="block py-2 hover:text-purple-400">Education</a>
+    <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
   </div>
 
   <!-- JavaScript for Mobile Menu Toggle -->
@@ -60,7 +62,7 @@
   </script>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center px-6 md:px-12">
+  <section class="min-h-screen flex items-center justify-center px-6 md:px-12" id="about">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl items-center">
       <!-- Profile Image: -->
       <div class="relative flex justify-center md:justify-end order-1 md:order-2">
@@ -96,8 +98,7 @@
   </section>
   <!-- ---------------------------skills---------------------------------------->
 
-
-  <section class="py-10">
+  <section class="py-10" id="skills"  >
     <h2 class="text-4xl font-bold text-white text-center">Skills</h2>
     <p class="text-lg text-white text-center mt-2">
       Here are some of my skills on which I have been working on for the past 2 years.
@@ -226,8 +227,11 @@
 
     </div>
   </section>
+
+
+
   <!-- -------------------------experience------------------------------ -->
-  <section class="text-center text-white px-4">
+  <section class="text-center text-white px-4" id="experience">
     <h2 class="text-3xl md:text-4xl font-bold">Experience</h2>
     <p class="text-gray-300 mt-2 text-lg md:text-xl">
       My work experience as a software engineer and working on
@@ -298,7 +302,7 @@
     </div>
   </div>
   <!-- ---------------------------projects------------------------------ -->
-  <div class="w-full  text-center  pb-12 pt-14">
+  <div class="w-full  text-center  pb-12 pt-14" id="projects">
     <h2 class="text-3xl md:text-4xl font-bold text-white ">Projects</h2>
     <p class="text-gray-300 mt-2 text-lg">
       I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
@@ -392,7 +396,7 @@
     </div>
   </div>
   <!-- ---------------------------Education------------------------- -->
-  <section class="text-center pt-16 pb-4  text-white px-4">
+  <section class="text-center pt-16 pb-4  text-white px-4" id="education">
     <h2 class="text-3xl md:text-4xl font-bold">Education</h2>
     <p class="text-gray-300 mt-2 text-lg md:text-xl">
       Education means Knowledge, values, skills, critical thinking. Problem solving and creativity. My educational
@@ -453,7 +457,7 @@
       
       </div> -->
       <!-- ------------------Contact Form ----------------------->
-      <section class="w-full flex items-center justify-center min-h-screen">
+      <section class="w-full flex items-center justify-center min-h-screen" id="contact">
         <div class="w-full max-w-lg bg-gray-900 p-8 rounded-2xl shadow-lg">
             <h2 class="text-4xl font-bold text-center text-white">Contact</h2>
             <p class="text-center text-xl text-white mb-6 ">Feel free to reach out to me for any questions or opportunities!</p>
@@ -478,12 +482,13 @@
           
           <!-- Navigation Links -->
           <nav class="mt-3">
-              <ul class="flex justify-center space-x-8 text-[18px]">
-                  <li><a href="#" class="hover:text-blue-400">About</a></li>
-                  <li><a href="#" class="hover:text-blue-400">Skills</a></li>
-                  <li><a href="#" class="hover:text-blue-400">Experience</a></li>
-                  <li><a href="#" class="hover:text-blue-400">Projects</a></li>
-                  <li><a href="#" class="hover:text-blue-400">Education</a></li>
+              <ul class="flex justify-center space-x-9 text-[18px]">
+                  <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                  <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                  <li><a href="#experience" class="hover:text-blue-400">Experience</a></li>
+                  <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                  <li><a href="#education" class="hover:text-blue-400">Education</a></li>
+                  <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
               </ul>
           </nav>
 
